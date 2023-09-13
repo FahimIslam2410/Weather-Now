@@ -7,16 +7,15 @@ Whether you're creating a personal website, portfolio, or complex web app, you c
 # Table of Contents
 
 1. [Introduction](#mern-template)
-                  - [Install Node.js](#install-nodejs)
-2. [Set up your project](#set-up-your-project)
 3. [MERN template's directory structure](#mern-templates-directory-structure)
+3. [Install Node.js](#install-nodejs)
+2. [Set up your project](#set-up-your-project)
 3. [Configuring MongoDB](#configuring-mongodb)
 4. [How to run the server and use the app](#how-to-run-the-server-and-use-the-app-as-a-human)
 
 5. [Using the App](#using-the-app)
 6. [How to run automated tests](#how-to-run-automated-tests)
-   - [Running tests for the backend](#running-tests-for-the-backend)
-   - [Running tests for the frontend](#running-tests-for-the-frontend)
+
  
  ## MERN template's directory structure.
   Here's an brief explanation of each folder:
