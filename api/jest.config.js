@@ -178,7 +178,21 @@ module.exports = {
   // unmockedModulePathPatterns: undefined,
 
   // Indicates whether each individual test should be reported during the run
-  // verbose: null,
+  verbose: true,
+
+  // Set the test environment to Node.js
+  testEnvironment: 'node',
+
+  // Increase the timeout for tests (in milliseconds)
+  testTimeout: 10000, // Set it to 10 seconds or adjust as needed
+
+  // Transform ES6 modules using 'babel-jest' (if you're using Babel)
+  transform: {
+    '^.+\\.js$': 'babel-jest',
+  },
+
+  // An array of file extensions your modules use
+  moduleFileExtensions: ['js', 'json', 'jsx', 'ts', 'tsx', 'node'],
 
   // An array of regexp patterns that are matched against all source file paths before re-running tests in watch mode
   // watchPathIgnorePatterns: [],

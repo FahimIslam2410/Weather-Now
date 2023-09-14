@@ -1,5 +1,5 @@
 {
-  "name": "merntemplate",
+  "name": "weathernow",
   "version": "0.0.0",
   "description": "MERN Template",
   "license": "CC BY-NC-SA",
@@ -27,14 +27,15 @@
     "mongodb": "^3.4.1",
     "mongoose": "^5.8.11",
     "morgan": "~1.9.1",
-    "node-fetch": "^2.6.12",
+    "node-fetch": "^2.7.0",
     "nodemon": "^2.0.15",
-    "superagent": "^8.0.0",
-    "supertest": "^6.2.4"
+    "superagent": "^8.0.0"
   },
   "devDependencies": {
+    "esm": "^3.2.25",
     "jest": "^27.5.1",
-    "jest-fetch-mock": "^3.0.3"
+    "jest-fetch-mock": "^3.0.3",
+    "supertest": "^6.3.3"
   },
   "nodemonConfig": {
     "ext": "js,hbs"

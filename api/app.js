@@ -4,7 +4,7 @@ const path = require("path");
 const logger = require("morgan");
 const JWT = require("jsonwebtoken");
 
-const demosRouter = require("./routes/demo");
+const weatherRouter = require("./routes/weather");
 const app = express();
 
 // setup for receiving JSON
@@ -12,7 +12,7 @@ app.use(express.json())
 app.use(logger("dev"));
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "public")));
-app.use("/demo", demosRouter);
+app.use("/weather", weatherRouter);
 
 
 
