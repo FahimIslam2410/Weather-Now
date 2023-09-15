@@ -32,6 +32,7 @@ describe('getWeather', () => {
           description: 'scattered clouds',
           temp: 23.74,
           feels_like: 23.37,
+          wind: 2.57,
           humidity: 46,
           icon: '03d'
         }

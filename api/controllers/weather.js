@@ -27,6 +27,7 @@ const WeatherController = {
         description: weatherData.weather[0].description,
         temp: weatherData.main.temp,
         feels_like: weatherData.main.feels_like,
+        wind: weatherData.wind.speed,
         humidity: weatherData.main.humidity,
         icon: weatherData.weather[0].icon,
       });
