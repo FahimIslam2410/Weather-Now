@@ -9,11 +9,12 @@ const WeatherController = {
 
     try {
       const response = await fetch(apiUrl);
-      if (!response.ok) {
-        const error = new Error('Please enter a location');
-        error.code = 400;
-        throw error;
+      if (response.status === 404) {
+        res.status(400).json({ error: "City not Found" });
+        return;
       }
+
+    
 
       const weatherData = await response.json();
       if (weatherData.message === "city not found") {
