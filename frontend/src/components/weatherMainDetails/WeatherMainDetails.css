@@ -49,21 +49,21 @@ body {
   text-align: center;
 }
 
-/* Media Query for Mobile Devices */
+/* Mobile Devices */
 @media (max-width: 768px) {
   .temp {
-      font-size: 24px; /* Adjust font size for mobile screens */
+      font-size: 24px; 
   }
 
   .name {
-      font-size: 18px; /* Adjust font size for mobile screens */
+      font-size: 18px; 
   }
 
   .feelsLikeContainer {
-      font-size: 14px; /* Adjust font size for mobile screens */
+      font-size: 14px;
   }
 
   .feelsLike {
-      font-size: 16px; /* Adjust font size for mobile screens */
+      font-size: 16px; 
   }
 }

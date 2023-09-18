@@ -8,7 +8,7 @@ body {
 
 .WeatherSecondayDetailsContainer {
   display: flex;
-  flex-wrap: wrap; /* Wrap items on smaller screens */
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 10px;
 }
@@ -17,10 +17,10 @@ body {
   display: flex;
   align-items: center;
   color: white;
-  font-size: 1.5vw; /* Responsive font size */
+  font-size: 1.5vw; 
   font-weight: bold;
   margin-bottom: 10px;
-  flex-basis: 45%; /* Adjust item width for smaller screens */
+  flex-basis: 45%;
 }
 
 .windContainer {
@@ -32,7 +32,7 @@ body {
 }
 
 .windImage, .humidityImage {
-  width: 15%; /* Responsive image size */
+  width: 15%;
   max-width: 80px;
   height: auto;
   margin-right: 10px;
@@ -42,9 +42,9 @@ body {
   margin-right: 5px;
 }
 
-/* Media Query for Mobile Devices */
+/* Mobile Devices */
 @media (max-width: 768px) {
   .windContainer, .humidityContainer {
-    font-size: 16px; /* Adjust font size for mobile screens */
+    font-size: 16px; 
   }
 }
