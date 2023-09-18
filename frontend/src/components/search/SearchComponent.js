@@ -26,7 +26,7 @@ const SearchComponent = ({ onCityChange }) => {
     <div className="search-container">
       <input
         type="text"
-        placeholder="Enter a city"
+        placeholder="Enter a location"
         value={inputCity}
         onChange={handleInputChange}
         onBlur={handleBlur}
