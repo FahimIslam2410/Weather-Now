@@ -1,3 +1,4 @@
+/* WeatherApp.css */
 .container {
     width: 80%;
     height: 80%;
@@ -15,6 +16,15 @@
     height: 380px;
     display: block;
     margin: 0 auto; 
+  }
+
+  /*  Mobile Devices */
+  @media (max-width: 768px) {
+    .weatherIconCompContainer {
+        width: 100%; 
+        height: auto; 
+        max-width: 300px; 
+    }
   }
   .content {
     flex-grow: 1;
