@@ -1,7 +1,6 @@
 import './App.css';
-import DemoForm from '../demoForm/DemoForm'
-import DemoRender from '../demoRender/demoRender';
-import React, { useState } from 'react';
+import WeatherApp from '../weather/WeatherApp'
+import React from 'react';
 import {
   useNavigate,
   Routes,
@@ -11,8 +10,7 @@ import {
 const App = () => {
     return (
         <Routes>
-          <Route path='/form'  element={<DemoForm  navigate={ useNavigate() }/>}/>
-          <Route path='/render'  element={<DemoRender  navigate={ useNavigate() }/>}/>
+          <Route path='/' element={<WeatherApp navigate={useNavigate()} />} />
         </Routes>
     );
 }
