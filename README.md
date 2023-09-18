@@ -124,3 +124,5 @@ npm run test
 ```
 
 ### Credits
+
+The Icons used were created by [Bas Milius](https://bas.dev/work/meteocons)
