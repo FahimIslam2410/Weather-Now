@@ -7,14 +7,14 @@ I've created Weather Now, a weather app powered by the MERN stack and using data
 <img width="1269" alt="Screenshot 2023-09-18 at 11 54 39" src="https://github.com/FahimIslam2410/Weather-Now/assets/120402745/bdc1a09f-29d7-4828-b0f1-c75f8e33c41f">
 
 
-# Table of Contents
+## Table of Contents
 
 1. [Introduction](#weather-now)
-3. [Install Node.js](#install-nodejs)
-2. [Set up your project](#set-up-your-project)
-4. [How to run the server and use the app](#how-to-run-the-server-and-use-the-app-as-a-human)
+2. [Install Node.js](#install-nodejs)
+3. [Set up your project](#set-up-your-project)
+4. [How to run the server and use the app](#how-to-run-the-server-and-use-the-app)
 5. [Using the App](#using-the-app)
-6. [How to run automated tests](#how-to-run-automated-tests)
+7. [Credits](#credits)
 
 
 ## Install Node.js
@@ -30,6 +30,8 @@ Then follow the instructions to update your `~/.bash_profile`.
 nvm install 18
 ```
 
+
+
 ## Set up your project
 
 1. **Fork this repository**: Click the "Fork" button in the top right corner of this page.
@@ -38,7 +40,31 @@ nvm install 18
 
 3. **Clone your fork**: Clone your forked repository to your local machine using Git.
 
-4. **Install Node.js dependencies**:
+4. **Install Node.js and Node Version Manager (NVM)**:
+
+   - Install Node Version Manager (NVM):
+
+     ```bash
+     brew install nvm
+     ```
+
+   - Open a new terminal.
+
+   - Install the latest version of [Node.js](https://nodejs.org/en/), currently `18.1.0`:
+
+     ```bash
+     nvm install 18
+     ```
+
+5. **Install `concurrently` package**:
+
+   In your project's main directory (the one containing both your backend and frontend directories), you'll need to install the `concurrently` package as a development dependency. This package allows you to run multiple commands concurrently, which can be useful for starting both your backend and frontend simultaneously.
+
+   ```bash
+   npm install concurrently --save-dev
+
+
+5. **Install Node.js dependencies**:
 - Navigate to the `api` directory:
 ```
 cd api
@@ -52,7 +78,7 @@ npm install
 
 5. **Install an ESLint plugin for your editor**: You can use [`linter-eslint`](https://github.com/AtomLinter/linter-eslint) for Atom or a similar plugin for your code editor.
 
-### Setup .env file (API Key)
+## Setup .env file (API Key)
 
 To fetch weather data from the OpenWeatherAPI, you'll need to obtain an API key from [https://openweathermap.org/](https://openweathermap.org/). Here's how to set it up:
 
@@ -89,23 +115,6 @@ npm start
 
 - You can access the weather page at [http://localhost:3000](http://localhost:3000) and enter any city of your choice and it will return the current weather information.
 
-
-## How to run automated tests
-
-The automated tests run by sending actual HTTP requests to the API. Therefore, before anything, you'll need to start the backend server in test mode (so that it connects to the test DB).
-
-**Note the use of an environment variable for the JWT secret**.
-
-```bash
-# Make sure you're in the api directory
-cd api
-
-npm run start:test
-```
-
-You should leave this running in a terminal.
-
-Then, you can either run tests for the backend or the frontend following the steps below.
 
 ### Running tests for the backend
 
