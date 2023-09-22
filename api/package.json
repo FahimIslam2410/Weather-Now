@@ -5,7 +5,9 @@
   "license": "CC BY-NC-SA",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www",
+    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "start:backend": "nodemon ./bin/www", 
+    "start:frontend": "cd ../frontend && npm start",
     "start:test": "MONGODB_URL='mongodb://0.0.0.0/demo_test' npm start",
     "test": "jest"
   },
