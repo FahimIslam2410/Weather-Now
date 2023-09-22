@@ -52,19 +52,34 @@ npm install
 
 5. **Install an ESLint plugin for your editor**: You can use [`linter-eslint`](https://github.com/AtomLinter/linter-eslint) for Atom or a similar plugin for your code editor.
 
+### Setup .env file (API Key)
+
+To fetch weather data from the OpenWeatherAPI, you'll need to obtain an API key from [https://openweathermap.org/](https://openweathermap.org/). Here's how to set it up:
+
+1. Visit [https://openweathermap.org/](https://openweathermap.org/).
+
+2. Sign up for an account and log in (if you haven't already).
+
+3. Once logged in, go to the API Keys section (usually under your profile settings).
+
+4. Create a new API key and copy it to your clipboard.
+
+5. In the `api` directory of your project, create a `.env` file if it doesn't already exist.
+
+6. Open the `.env` file and add the following line, replacing `<YOUR_API_KEY>` with the API key you obtained:
+
+```API_KEY=<YOUR_API_KEY>```
+
+7. Save the `.env` file.
+
+Now your backend application is configured to use the OpenWeatherAPI with your API key. Be sure to keep your API key confidential and don't share it publicly.
+
 
 ## How to run the server and use the app (as a human)
 
-1. **Start the server application** (in the `api` directory):
+1. **Start the application** (in the `api` directory):
 ```
 cd api
-npm start
-```
-
-2. **Start the front end application** (in the `frontend` directory):
-In a new terminal session:
-```
-cd frontend
 npm start
 ```
 
