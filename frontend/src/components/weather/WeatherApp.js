@@ -1,5 +1,7 @@
-import "./WeatherApp.css"
+import './WeatherApp.css'
+import { API_BASE_URL } from '../../config';
 import React, { useEffect, useState } from 'react';
+
 import WeatherLogo from '../weatherLogo/WeatherLogo';
 import SearchComponent from '../search/SearchComponent';
 import WeatherMainDetails from "../weatherMainDetails/WeatherMainDetails";
@@ -13,10 +15,9 @@ const WeatherApp = () => {
     setCity(newCity);
   };
 
-
   const getData = () => {
     try {
-      fetch(`/weather/${city}`)
+      fetch(`${API_BASE_URL}/weather/${city}`)
         .then((response) => response.json())
         .then((data) => {
           setWeatherData(data);
@@ -33,13 +34,9 @@ const WeatherApp = () => {
     getData();
   }, [city]);
 
-
   return (
     <div className="container">
-      
-      <h1 className="weatherTitle">
-        Weather Now
-      </h1>
+      <h1 className="weatherTitle">Weather Now</h1>
       
       <div className="SearchBarCompContainer">
         <SearchComponent className="searchComponent" onCityChange={handleCityChange} />
@@ -62,12 +59,9 @@ const WeatherApp = () => {
           wind={weatherData && weatherData.wind}
           humidity={weatherData && weatherData.humidity}
         />
-
       </div>
-
     </div>
   );
 };
 
 export default WeatherApp;
-
